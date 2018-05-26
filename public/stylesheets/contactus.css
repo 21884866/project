@@ -1,0 +1,128 @@
+/* Name: Jia Xun Ng */
+/* Student ID: 21884866 */
+/* Contact Us Stylesheet */
+/* Source: https://www.w3schools.com/howto/howto_css_contact_section.asp */
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border: none;
+    background:rgb(239,244,246);
+    color:rgb(24,102,129);
+    font-weight: bold;
+    font-size: 0.85em;   
+}
+
+::placeholder{
+    color: rgb(158,187,199);
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+
+
+/* :Focus Effect ---------------------------------------------*/
+.contactcontainer select:focus, input[type=text]:focus{
+    background-color:rgb(221,232,237);
+    outline: none;
+}
+
+input[type=submit] {
+    background-color:rgb(15, 53, 55);
+    display:inline-block;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight:bold;
+    margin: 8px 0;
+}
+
+input[type=submit]:hover {
+    opacity:0.8;
+    cursor: pointer;
+}
+
+/* Style the container/contact section */
+.contactcontainer{
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* Contact Us Wording Design ---------------------------------------------*/
+.contactcontainer h2 {
+    font-size: 1.5em;
+    color: rgb(68, 78, 74);
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contactcontainer p {
+    font-size: 1em;
+    color: rgb(89, 96, 93);
+    font-weight: lighter;
+}
+
+/* Label ---------------------------------------------*/
+.contactcontainer label {
+    display: inline-block;
+    text-align: right;
+    font-size: 1em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
+}
+
+
+iframe{
+    width:100%;
+    height:570px;
+    border:0;
+}

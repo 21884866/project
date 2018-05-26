@@ -1,0 +1,96 @@
+<!-- Name: Jia Xun Ng -->
+<!-- Student ID: 21884866 -->
+<!-- My Task Page (To do List) -->
+<!-- https://www.w3schools.com/howto/howto_js_todolist.asp -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+
+    <title>My Task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="mytask.css">
+</head>
+
+
+<body>
+
+  <!-- Header __________________________________________________________________-->
+        <div class="header">
+                
+            <a href="homepage.htm">
+            <h1>
+                pro <img src="target.png" alt="logo" /> target                
+            </h1>
+            </a>
+        </div>
+
+
+<!-- Navigation Bar __________________________________________________________________-->
+<div class="nav">
+        <ul>
+            <li class="home"><a href="homepage.htm">Home</a></li>
+            <li class="mytask"><a href="mytask.htm">My Task</a></li>
+            
+            <!-- <li class="about"><a href="#">About</a></li>-->
+            <!-- <li class="news"><a href="#">Newsletter</a></li>-->
+          
+
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">events</a>
+                <div class="dropdown-content">
+                  <a href="meetings.htm">meetings</a>
+                  <a href="#">client appointment</a>
+                  <a href="#">entertainment</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">contact</a>
+                    <div class="dropdown-content">
+                      <a href="meetourteam.htm">meet our team</a>
+                      <a href="contactus.htm">contact us</a>
+                    </div>
+            </li>
+            <li class="reference"><a href="reference.htm">reference</a></li>
+
+
+        </ul>
+</div>
+
+
+
+  <!-- My Task (To Do List) __________________________________________________________________-->
+
+      <div id="myDIV" class="mytaskheader">
+        <h2 style="margin:5px">My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+
+      <div class="myUL">
+        <ul id="myUL">
+            <li>Meeting Proposal</li>
+            <li>Client list sorting</li>
+            <li>Make Appointment with Client</li>
+            <li>Team Meeting Materials</li>
+            <li>Company X Development Plans</li>
+            <li>Print Out Proposals</li>
+        </ul>
+      </div>
+
+
+      <script src="mytask.js"></script>
+
+
+
+</body>
+</html>

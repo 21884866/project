@@ -1,0 +1,147 @@
+/* Name: Jia Xun Ng */
+/* Student ID: 21884866 */
+/* Sign Up Page Stylesheet */
+/*Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_signup_form*/
+
+
+/* Body ---------------------------------------------*/
+body
+
+{font-family: Arial, Helvetica, sans-serif;}
+*{box-sizing: border-box}
+
+
+/* Label ---------------------------------------------*/
+.container label b, .container h2{
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    font-size: 1em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
+}
+
+/* Input Fields ---------------------------------------------*/
+
+input[type=text], input[type=password],input[type=tel] {
+    width: 50%;
+    padding: 12px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background:rgb(239,244,246);
+    color:rgb(24,102,129);
+    font-weight: bold;
+    font-size: 0.85em;   
+}
+
+::placeholder{
+    color: rgb(158,187,199);
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+
+
+/* Drop Down Menu for Title ---------------------------------------------*/
+.container select {
+    display: inline-block;
+    width: 15%;
+    font-size: 1em;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding: 15px;
+    background:rgb(239,244,246);
+    color:rgb(24,102,129);
+    font-weight: bold;
+
+}
+
+/* :Focus Effect ---------------------------------------------*/
+.container select:focus, input[type=text]:focus, input[type=password]:focus,input[type=tel]:focus {
+    background-color:rgb(221,232,237);
+    outline: none;
+}
+
+/* :Personal Details Wording Design ---------------------------------------------*/
+.container h1 {
+    font-size: 1.3em;
+    color: rgb(68, 78, 74);
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 30%;
+
+}
+
+/* :Please fill in this form to create an account Design ---------------------------------------------*/
+.container p {
+    font-size: 1em;
+    color: rgb(89, 96, 93);
+    font-weight: lighter;
+    margin-left: 30%;
+
+}
+
+
+/* :Checkbox Design (Remember Me & Terms & Privacy) ---------------------------------------------*/
+
+input[type=checkbox]{
+
+    margin-left: 30%;
+
+}
+
+.container h3 {
+    font-size: 1em;
+    color: rgb(89, 96, 93);
+    font-weight: lighter;
+    display: inline-block;
+}
+
+
+/* Buttons Design ---------------------------------------------*/
+
+.signupbutton{
+    text-align: center;
+
+}
+.signupbutton button{
+    
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight:bold;
+    margin: 8px 0;
+    width: 30%;
+
+}
+
+.signupbutton button:hover{
+    opacity:0.8;
+    cursor: pointer;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: rgb(215,26,80);
+    display:inline-block;
+}
+
+.signupbtn {
+    background-color:rgb(15, 53, 55);
+    display:inline-block;
+}
+
+
+

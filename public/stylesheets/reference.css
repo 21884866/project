@@ -1,0 +1,40 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.references h2 {
+    font-size: 1.5em;
+    color: rgb(68, 78, 74);
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+   
+}
+
+.references h3 {
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left:10%;
+}
+
+
+.references p{
+
+margin-left:10%;
+
+}
+
+.references img{
+
+width: 20em;
+margin-left:10%;
+
+}
