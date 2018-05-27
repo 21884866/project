@@ -1,7 +1,80 @@
 doctype html
 html
+ 
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='UTF-8')
+    title  Home 
+    link(href='/stylesheets/style.css', rel='stylesheet')
+    script(src='/javascripts/javascript.js')
+    style.
+      h1, h3, p {
+      padding: 0%;
+      margin: 0%;
+      }
+      .content, .column {
+      background-color: rgba(213, 240, 202, 0.651);
+      padding: 1%;
+      float: left;
+      margin: 1%;
+      }
+      .column {
+      width: 45%;
+      }
+
   body
     block content
+    #navigation.nav
+      script.
+        getNavigation();
+    .bg
+      .content
+        h1 Teamwork makes the dream work 
+        p
+          | Working in a team can be hard for everyone. Our website is here to help you with that! Designed for leaders and members, our website is designed to help team management easier! Specificly designed to help in the workplace, you can make announcements, arrange meetings, events, manage projects and even keep your own to do list!
+      .column
+        h3
+          img.icon(src='http://www.iconarchive.com/download/i86992/graphicloads/colorful-long-shadow/Announcement.ico', alt='Announcement')
+          |  Announcements 
+        p
+          | Need to inform everyone about the new meeting time? Make an announcement! We'll make sure that your team members get informed as soon as the announcement is published.
+      .column
+        h3
+          img.icon(src='https://faultlogger.com/wp-content/uploads/2014/11/upcoming-events-calendar-icon-date-day-event-20203.png', alt='Event')
+          |  Events
+          
+        p
+          | Create an event and invite your members. Be it a meeting or a team bonding activities, create the event, arrange the time and you're good to go.
+      .row
+      .column
+        h3
+          img.icon(src='https://eralis.software/wp-content/uploads/Project-Team-Icon.png', alt='Project')
+          |  Projects
+        p
+          | Got a new project coming up? Or just have too many that it's becoming too hard to keep track of them. Add the project and we'll show every project you're involved in. If you're a team leader, invite your members to the project and add tasks for them to do. Or make the project public so that other people can join! Prioritise eash task so that your team members know which one to get to first.
+      .column
+        h3
+          img.icon(src='http://www.icons101.com/icon_png/size_512/id_82114/ToDo.png', alt='To Do')
+          |  To Do
+        p
+          | Keep track of your own work with a to do list. Add a task and check it when you're done.
+      .column
+        h4
+          | Not a member yet? 
+          a(href='sign-up.html') Sign Up Now!
+          |                     Already have an account? 
+          a(href='login.html') Sign In
+      .content
+        h3
+          img.icon(src='https://cdn.iconscout.com/public/images/icon/premium/png-512/network-security-algorithm-authentication-chart-graph-35aa0c64b60586ba-512x512.png', alt='Algorithm')
+          |  Our algorithm
+        p
+          | Want to be part of someone else's project? Or maybe you want to search up the details of that company event you're interested in.
+          | Just search them up and we'll show you a list of the most relevant events and projects you'll be interested in. For each public event and project, we'll generate a list of keywords that will make your searching easier.
+      .row
+    #footer.footer
+      #link.column-middle
+        script.
+          getLinks();
+      #timeStamp.content-middle(style='float:right')
+        script.
+          getTimeStamp();
